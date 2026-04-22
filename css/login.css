@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: url('../img/loginbg.png') no-repeat center center/cover;
+    color: #353434dc;
+}
+
+.container{
+    background: #DAC1AD;
+    width: 450px;
+    padding: 1.5rem;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0,0,1,0.5);
+}
+
+form{
+    margin: 0 2rem;
+}
+
+.form-title{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.3rem;
+    margin-bottom: 0.4rem;
+    color: #422F2B;
+    text-shadow: -1px -1px 0 #cea07b,
+               1px -1px 0 #cea07b,
+               -1px 1px 0 #cea07b,
+               1px 1px 0 #cea07b;
+}
+
+input{
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #353434dc;
+    padding-left: 1.5rem;
+    font-size: 15px;
+}
+
+.input-group{
+    padding: 1% 0;
+    position: relative;
+}
+
+.input-group i{
+    position: absolute;
+    color: #422F2B;
+    top: -5%;
+
+}
+
+input:focus{
+    background-color: transparent;
+    outline: transparent;
+    border-bottom: 2px solid #EF9C9A;
+
+}
+
+input::placeholder{
+    color: transparent;
+}
+
+label{
+    color: #353434dc;
+    position: relative;
+    left: 1.2em;
+    top: -1.4em;
+    cursor: auto;
+    transition: 0.3s ease all;
+}
+
+input:focus~label, input:not(:placeholder-shown)~label{
+    top: -3em;
+    color: #EF9C9A;
+    font-size: 15px;
+}
+
+.recover{
+    text-align: right;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.recover a{
+    text-decoration: none;
+    color: #422F2B;
+    text-shadow: -0px -0px 0 #cea07b,
+                 0px -0px 0 #cea07b,
+                 -0px 0px 0 #cea07b,
+                 1px 0px 0 #cea07b;
+}
+
+.recover a:hover{
+    color: #EF9C9A;
+    text-decoration: underline;
+}
+
+.btn{
+    font-size: 1.1rem;
+    padding: 8px 0;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 100%;
+    background: #ABCFCE;
+    color: #422F2B;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+.btn:hover{
+    background: #EF9C9A;
+    color: white;
+}
+
+.or{
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.icons{
+    text-align: center;
+}
+
+.icons i{
+    color: #422F2B;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 2px solid #ABCFCE;
+    margin: 0 15px;
+    transition: 1s;
+}
+
+.icons i:hover{
+    background: #EF9C9A;
+    font-size: 1.6rem;
+    border: none;
+    color: white;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 4rem;
+    margin-top: 0.9rem;
+    font-weight: bold;
+}
+
+button{
+    color: #422F2B;
+    text-shadow: -0px -0px 0 #cea07b,
+                 0px -0px 0 #cea07b,
+                 -0px 0px 0 #cea07b,
+                 1px 0px 0 #cea07b;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+button:hover{
+    text-decoration: underline;
+    color: #EF9C9A;
+}
