@@ -80,7 +80,7 @@ label{
 
 input:focus~label, input:not(:placeholder-shown)~label{
     top: -3em;
-    color: #EF9C9A;
+    color: #422F2B;
     font-size: 15px;
 }
 

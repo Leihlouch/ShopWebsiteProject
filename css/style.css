@@ -1067,3 +1067,34 @@ footer {
   }
 }
 
+
+/*============= Chunku Image RESPONSIVENESS=============*/
+.about .imgBx {
+  width: 100% !important;
+  min-width: unset !important;
+  min-height: unset !important;
+  left: 0 !important;
+
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .imgBx .fitBg {
+  width: 100% !important;
+  max-width: 500px !important;
+  height: auto !important;
+  display: block !important;
+}
+
+@media (max-width: 991px) {
+  .about .imgBx .fitBg {
+    max-width: 650px !important;
+  }
+}
+
+@media (max-width: 818px) {
+  .about .imgBx {
+    display: none !important;
+  }
+}
