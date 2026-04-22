@@ -604,8 +604,8 @@ body {
   position: relative;
   left: 75px;
   min-width: 50%;
-  width: 50%;
-  min-height: 500px;
+  width: 30%;
+  min-height: 400px;
 }
 
 .btn2{
@@ -665,6 +665,17 @@ body {
 .card-title {
   color: #422F2B;
   font-weight: 600;
+}
+
+@media (max-width: 1110px) {
+  .products-section .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .products-section .card {
+    width: 100%;
+  }
 }
 
 .text-primary {
@@ -755,6 +766,18 @@ footer {
   width: 50px;
   height: 2px;
   background: #422F2B;
+}
+
+@media (max-width: 1110px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+
+  .footer-container .sec {
+    width: 100%;
+    margin-bottom: 25px;
+  }
 }
 
 /* Contact Info Styles */
@@ -1087,14 +1110,35 @@ footer {
   display: block !important;
 }
 
+@media (max-width: 380px) {
+  .about .imgBx {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1110px) {
+  .about {
+    flex-direction: column;   
+    text-align: center;       
+  }
+
+  .about .contentBx {
+    max-width: 100%;
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .about .imgBx {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 991px) {
   .about .imgBx .fitBg {
     max-width: 650px !important;
   }
 }
 
-@media (max-width: 818px) {
-  .about .imgBx {
-    display: none !important;
-  }
-}
